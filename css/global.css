@@ -1,0 +1,230 @@
+/* Global
+---------- */
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body { 
+    background: url("../img/photo_mobile.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+/*Left (top) column
+--------------------*/
+#appRoot  {
+    padding: 0;
+}
+
+#appRoot .row {
+    margin: 0;
+}
+div[class^="col-"].left {
+    padding: 0;
+}
+div.wrapper.left {
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.66);
+    color: white;
+    text-align: center;
+}
+
+/*Left (top) column --> Sub rows:
+---------------------------------*/
+/* Logo row*/
+div.wrapper.logo {
+    min-height: 100px;
+    padding-top: 30px;
+}
+.img-responsive.logo {
+    display: inline-block;
+}
+/* Main headline row */
+div.wrapper.main-headline h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+br.mobile {
+    display: inline;
+}
+br.desktop {
+    display: none;
+}
+/* Description row */
+div.wrapper.desc {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+/*Trial row*/
+button.trial {
+    min-width: 210px;
+    min-height: 50px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+button.trial:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+/*Right (bottom) column
+------------------------*/
+div[class^="col-"].right {
+    background-color:rgba(0, 0, 0, 0.66);
+    padding: 0;
+}
+div.wrapper.right {
+    display: flex;
+    flex-direction: column;
+}
+div.buffer.right {
+    display: none;
+}
+div.wrapper.pie {
+    padding-top: 125px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+pie {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 5px solid #1cdaf8;
+    margin: 1em;
+    color: white;
+}
+
+.pie.top {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.pie.top div {
+    color: #18b7d0; 
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.pie.top div.quarter {
+    width: 40%;
+}
+
+.pie.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    color: #1cdaf8;
+    padding-top: 15px;
+}
+#mbCounter {
+    font-size: 3.5em;
+    font-weight: 300;
+}
+#mbCounter span {
+    font-size: 0.5em;
+}
+.pie.bottom div.half {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+
+/*******
+ TABLETS
+********/
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/*******
+ DESKTOPS
+********/
+@media only screen and (min-width: 1200px) {
+    /* Global - DESKTOP */
+    body { 
+        background: url("../img/photo_desktop.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    #appRoot .row {
+        margin-right: 0 -15px;
+    }
+    /*Left (top) column - DESKTOP
+    -----------------------------*/
+    div.wrapper.left {
+        min-height: 100vh;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.66);
+        color: white;
+        padding-left: 62px;
+        text-align: unset;
+    }
+    /*Left (top) column --> Sub rows - DESKTOP:
+    ------------------------------------------*/
+    /* Logo row - DESKTOP*/
+    div.wrapper.logo {
+        min-height: 230px;
+        padding-top: 62px;
+    }
+    .img-responsive.logo {
+        display: unset;
+    }
+    /* Main headline row - DESKTOP*/
+    div.wrapper.main-headline h1 {
+        font-size: 3em;
+    }
+    br.mobile {
+        display: none;
+    }
+    br.desktop {
+        display: inline;
+    }
+    /* Description row - DESKTOP */
+    div.wrapper.desc {
+        font-size: 2em;
+    }
+    /*Trial row - DESKTOP*/
+    div.wrapper.trial {
+        padding-bottom: 255px;
+    }
+    /*Right (bottom) column - DESKTOP
+    --------------------------------*/
+    div[class^="col-"].right {
+        background-color: transparent;
+        padding: 0 15px;
+    }
+    div.buffer.right {
+        display: block;
+        height: 150px;
+        width: 100%;
+    }
+    div.wrapper.right {
+        min-height: 928px;
+    }
+    div.wrapper.pie {
+        padding-top: 125px;
+        padding-bottom: 40px;
+    }
+    pie {
+        width: 300px;
+        height: 300px;
+    }
+}
